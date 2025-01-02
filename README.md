@@ -13,7 +13,7 @@ To test the class virgilio's workflow run python with your shortcut on file work
 
 # Git
 
-In this project is implemented the git versioning system, the main branch is "master"
+In this project is implemented the git versioning system, the main branch is basically "main"
 
 # Exercises
 
