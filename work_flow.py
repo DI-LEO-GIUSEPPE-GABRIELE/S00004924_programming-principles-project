@@ -58,10 +58,10 @@ try:
     # Exercise 9 - Find all verses of the selected Canto
     # that contain the selected words.
     found_verses = virgilio.count_words(canto_to_read, words_to_count)
+    words_to_count_joined = ', '.join(words_to_count)
     print(
-        f"Verses containing {', '.join(words_to_count)} of Canto {
-            canto_to_read}:\n"
-        f"{found_verses}"
+        f"Verses containing {words_to_count_joined} of Canto {
+            canto_to_read}:{found_verses}"
     )
 
     # Exercise 10 - Return a list with all the verses of all the Hell.
@@ -82,10 +82,8 @@ try:
 
     # Exercise 13 - new strip_lines param in read_canto_lines.
     canto_lines = virgilio.read_canto_lines(canto_to_read, strip_lines=True)
-    print(
-        f"Lines of Canto {
-            canto_to_read} with spaces and line breaks removed:\n"
-    )
+    print(f"Lines of Canto {
+          canto_to_read} with spaces and line breaks removed:\n")
     for line in canto_lines:
         print(f"{line}")
 
