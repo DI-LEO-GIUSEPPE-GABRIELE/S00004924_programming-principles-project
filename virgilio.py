@@ -32,7 +32,8 @@ class Virgilio:
                          num_lines: int | None = None) -> list[str] | str:
         """
         This method returns a list of lines of a Canto specified by number,
-        optionally removing spaces and newlines and limiting the number of lines.
+        optionally removing spaces and newlines
+        and limiting the number of lines.
 
         The parameters are:
         ***
@@ -67,7 +68,8 @@ class Virgilio:
                     # method to remove spaces and newlines (strip)
                     stripped_lines = []
                     for line in lines:
-                        # methods to append a list to another list and to remove spaces and newlines
+                        # methods to append a list to another list
+                        # and to remove spaces and newlines
                         stripped_lines.append(line.strip())
                     lines = stripped_lines
                 if num_lines is not None:
@@ -106,7 +108,8 @@ class Virgilio:
 
     def count_word(self, canto_number: int, word: str) -> int:
         """
-        This method returns the number of occurrences of a specific word in a Canto.
+        This method returns the number of occurrences
+        of a specific word in a Canto.
 
         The parameters are:
         ***
